@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Ameg Dines | Portfolio',
-  description: 'Portfolio of Ameg Dines, Software Engineer & Tech Enthusiast',
+  description: 'Portfolio of Ameg Dines, Data Science Engineer & Tech Enthusiast',
 };
 
 export default function RootLayout({

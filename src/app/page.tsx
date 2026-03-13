@@ -6,20 +6,47 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>Ameg Dines</div>
         <nav className={styles.navLinks}>
-          <a href="#about" className={styles.navLink}>About</a>
+          <a href="#about" className={styles.navLink} style={{ color: 'var(--primary)' }}>Home</a>
           <a href="#skills" className={styles.navLink}>Skills</a>
           <a href="#projects" className={styles.navLink}>Projects</a>
-          <a href="#education" className={styles.navLink}>Education</a>
-          <a href="#training" className={styles.navLink}>Training</a>
+          <a href="#certifications" className={styles.navLink}>Certifications</a>
+          <a href="#achievements" className={styles.navLink}>Achievements</a>
+          <a href="#resume" className={styles.navLink}>Resume</a>
+          <a href="#contact" className={styles.navLink}>Contact</a>
         </nav>
       </header>
 
       <section className={styles.hero}>
-        <h1 className={styles.title}>Data Science Engineer <br/> & Tech Enthusiast</h1>
-        <p className={styles.subtitle}>
-          Passionate about data structures, algorithms, and building robust systems. 
-          Currently pursuing B.Tech in Computer Science at Lovely Professional University.
+        <div className={styles.avatarContainer}>
+          <img 
+            src={`https://ui-avatars.com/api/?name=Amegh+Dinesh&background=eab308&color=0b0f19&size=200`} 
+            alt="Amegh Dinesh" 
+            className={styles.avatarImage}
+          />
+        </div>
+        
+        <h1 className={styles.title}>
+          <span className={styles.titleGradient}>Amegh Dinesh</span>
+        </h1>
+        
+        <h2 className={styles.heroSubtitle}>
+          Full Stack Developer <span className={styles.cursor}>|</span>
+        </h2>
+
+        <p className={styles.heroDescription}>
+          Welcome to my digital playground! I craft elegant solutions through code, turning ideas into immersive digital experiences that solve real-world problems.
         </p>
+        
+        <div className={styles.heroPills}>
+          <span className={styles.heroPill}>Java</span>
+          <span className={styles.heroPill}>Python</span>
+          <span className={styles.heroPill}>React</span>
+          <span className={styles.heroPill}>JavaScript</span>
+          <span className={styles.heroPill}>Node.js</span>
+          <span className={styles.heroPill}>MongoDB</span>
+          <span className={styles.heroPill}>CSS</span>
+        </div>
+
         <div className={styles.buttonGroup}>
           <a href="#projects" className={styles.primaryButton}>View My Work</a>
           <a href="mailto:amegdines@gmail.com" className={styles.secondaryButton}>Contact Me</a>
@@ -153,33 +180,85 @@ export default function Home() {
       </section>
 
       <section id="projects" className={styles.section}>
-        <h2 className={styles.sectionTitle}>Featured Projects</h2>
+        <div className={styles.projectsHeader}>
+          <h2 className={styles.sectionTitle} style={{ marginBottom: '1rem' }}>Featured Projects</h2>
+          <p className={styles.projectsSubtitle}>
+            A showcase of my work spanning web applications, APIs, and responsive interfaces.
+          </p>
+          
+          <div className={styles.projectFilters}>
+            <span className={`${styles.filterPill} ${styles.filterActive}`}>All Projects</span>
+            <span className={styles.filterPill}>Full Stack</span>
+            <span className={styles.filterPill}>Data Visualization</span>
+            <span className={styles.filterPill}>Frontend</span>
+            <span className={styles.filterPill}>API Integration</span>
+            <span className={styles.filterPill}>Web App</span>
+          </div>
+        </div>
+
         <div className={styles.grid}>
           {/* Event Manager Project */}
-          <div className={`${styles.card} glass`}>
-            <h3 className={styles.cardTitle}>Event Manager</h3>
-            <div className={styles.cardDate}>Jun &apos;25 &mdash; Jul &apos;25</div>
-            <p className={styles.cardDesc}>
-              A robust event-handling system that allows users to efficiently organize and manage scheduled activities. Built using object-oriented principles, ensuring modularity and clear system architecture.
-            </p>
-            <div className={styles.cardTags}>
-              <span className={styles.tag}>Java</span>
-              <span className={styles.tag}>Java Swing</span>
-              <span className={styles.tag}>OOP</span>
+          <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
+            <div className={styles.projectImageContainer}>
+              <div className={styles.projectImagePlaceholder}>
+                 {/* Placeholder for project image */}
+                 <span style={{color: '#94a3b8'}}>Project Preview</span>
+              </div>
+              <span className={styles.featuredBadge}>Featured</span>
+              <div className={styles.imageTagsOverlay}>
+                <span className={styles.imageTag}>Full Stack</span>
+                <span className={styles.imageTag}>Java UI</span>
+              </div>
+            </div>
+            
+            <div className={styles.projectContent}>
+              <h3 className={styles.cardTitle}>Event Manager</h3>
+              <p className={styles.cardDesc}>
+                A robust event-handling system that allows users to efficiently organize and manage scheduled activities. Built using object-oriented principles, ensuring modularity and clear system architecture.
+              </p>
+              
+              <div className={styles.cardTagsWrapper}>
+                <span className={styles.techTag}>Java</span>
+                <span className={styles.techTag}>Java Swing</span>
+                <span className={styles.techTag}>OOP</span>
+              </div>
+              
+              <div className={styles.projectActions}>
+                <button className={styles.projectPrimaryBtn}>Live Demo</button>
+                <button className={styles.projectSecondaryBtn}>Source Code</button>
+              </div>
             </div>
           </div>
 
           {/* Mental Health Simulator Project */}
-          <div className={`${styles.card} glass`}>
-            <h3 className={styles.cardTitle}>Mental Health Simulator</h3>
-            <div className={styles.cardDate}>Dec &apos;25 &mdash; Jan &apos;26</div>
-            <p className={styles.cardDesc}>
-              An interactive text-based simulator providing tailored wellness guidance based on user mood evaluation. Includes scenario-based question flows and input validation for smooth interaction.
-            </p>
-            <div className={styles.cardTags}>
-              <span className={styles.tag}>Java</span>
-              <span className={styles.tag}>Java Swing</span>
-              <span className={styles.tag}>JSON</span>
+          <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
+            <div className={styles.projectImageContainer}>
+              <div className={styles.projectImagePlaceholder} style={{ background: '#1e293b' }}>
+                 {/* Placeholder for project image */}
+                 <span style={{color: '#94a3b8'}}>Project Preview</span>
+              </div>
+              <div className={styles.imageTagsOverlay}>
+                <span className={styles.imageTag}>Interactive</span>
+                <span className={styles.imageTag}>Simulator</span>
+              </div>
+            </div>
+            
+            <div className={styles.projectContent}>
+              <h3 className={styles.cardTitle}>Mental Health Simulator</h3>
+              <p className={styles.cardDesc}>
+                An interactive text-based simulator providing tailored wellness guidance based on user mood evaluation. Includes scenario-based question flows and input validation for smooth interaction.
+              </p>
+              
+              <div className={styles.cardTagsWrapper}>
+                <span className={styles.techTag}>Java</span>
+                <span className={styles.techTag}>Java Swing</span>
+                <span className={styles.techTag}>JSON</span>
+              </div>
+              
+              <div className={styles.projectActions}>
+                <button className={styles.projectPrimaryBtn}>Live Demo</button>
+                <button className={styles.projectSecondaryBtn}>Source Code</button>
+              </div>
             </div>
           </div>
         </div>
@@ -187,33 +266,44 @@ export default function Home() {
 
       <section id="education" className={styles.section}>
         <h2 className={styles.sectionTitle}>Education</h2>
-        <div className={styles.grid}>
-          <div className={`${styles.card} glass`}>
-            <h3 className={styles.cardTitle}>Lovely Professional University</h3>
-            <div className={styles.cardDate}>Aug &apos;23 &mdash; Present</div>
-            <p className={styles.cardDesc}>Bachelor of Technology - Computer Science and Engineering</p>
-            <div className={styles.cardTags}>
-              <span className={styles.tag}>CGPA: 6.4</span>
+        <div className={styles.educationList}>
+          
+          <div className={`${styles.educationCard} glass`}>
+            <div className={styles.educationInfo}>
+              <h3 className={styles.educationTitle}>Lovely Professional University</h3>
+              <p className={styles.educationLocation}>Punjab, India</p>
+              <p className={styles.educationDegree}>Bachelor of Technology - Computer Science and Engineering</p>
+              <p className={styles.educationScore}>CGPA: 6.4*</p>
+            </div>
+            <div className={styles.educationDateContainer}>
+              <span className={styles.datePill}>Since August 2023</span>
             </div>
           </div>
           
-          <div className={`${styles.card} glass`}>
-            <h3 className={styles.cardTitle}>Gvhss Madappally</h3>
-            <div className={styles.cardDate}>Jun &apos;21 &mdash; Mar &apos;23</div>
-            <p className={styles.cardDesc}>Intermediate Education</p>
-            <div className={styles.cardTags}>
-              <span className={styles.tag}>Score: 93.9%</span>
+          <div className={`${styles.educationCard} glass`}>
+            <div className={styles.educationInfo}>
+              <h3 className={styles.educationTitle}>Gvhss Madappally</h3>
+              <p className={styles.educationLocation}>Kerala, India</p>
+              <p className={styles.educationDegree}>Intermediate</p>
+              <p className={styles.educationScore}>Percentage: 93.9%</p>
+            </div>
+            <div className={styles.educationDateContainer}>
+              <span className={styles.datePill}>June 2021 - March 2023</span>
             </div>
           </div>
 
-          <div className={`${styles.card} glass`}>
-            <h3 className={styles.cardTitle}>Gvhss Madappally</h3>
-            <div className={styles.cardDate}>Jun &apos;20 &mdash; Mar &apos;21</div>
-            <p className={styles.cardDesc}>Matriculation</p>
-            <div className={styles.cardTags}>
-              <span className={styles.tag}>Score: 95%</span>
+          <div className={`${styles.educationCard} glass`}>
+            <div className={styles.educationInfo}>
+              <h3 className={styles.educationTitle}>Gvhss Madappally</h3>
+              <p className={styles.educationLocation}>Kerala, India</p>
+              <p className={styles.educationDegree}>Matriculation</p>
+              <p className={styles.educationScore}>Percentage: 95%</p>
+            </div>
+            <div className={styles.educationDateContainer}>
+              <span className={styles.datePill}>June 2020 - March 2021</span>
             </div>
           </div>
+
         </div>
       </section>
 
