@@ -18,25 +18,25 @@ export default function Home() {
 
       <section className={styles.hero}>
         <div className={styles.avatarContainer}>
-          <img 
-            src={`https://ui-avatars.com/api/?name=Amegh+Dinesh&background=eab308&color=0b0f19&size=200`} 
-            alt="Amegh Dinesh" 
+          <img
+            src={`https://ui-avatars.com/api/?name=Amegh+Dinesh&background=eab308&color=0b0f19&size=200`}
+            alt="Amegh Dinesh"
             className={styles.avatarImage}
           />
         </div>
-        
+
         <h1 className={styles.title}>
-          <span className={styles.titleGradient}>Amegh Dinesh</span>
+          <span className={styles.titleGradient}>Ameg Dines</span>
         </h1>
-        
+
         <h2 className={styles.heroSubtitle}>
-          Full Stack Developer <span className={styles.cursor}>|</span>
+          Data Science Engineer <span className={styles.cursor}>|</span>
         </h2>
 
         <p className={styles.heroDescription}>
           Welcome to my digital playground! I craft elegant solutions through code, turning ideas into immersive digital experiences that solve real-world problems.
         </p>
-        
+
         <div className={styles.heroPills}>
           <span className={styles.heroPill}>Java</span>
           <span className={styles.heroPill}>Python</span>
@@ -57,7 +57,7 @@ export default function Home() {
         <div className={styles.aboutTitleContainer}>
           <h2 className={styles.aboutTitleText}>About Me</h2>
         </div>
-        
+
         <div className={styles.aboutGrid}>
           {/* Left Column */}
           <div className={styles.aboutColumn}>
@@ -116,7 +116,7 @@ export default function Home() {
               <h3 className={styles.aboutCardTitle} style={{ color: '#60a5fa' }}>My Journey</h3>
               <div className={styles.aboutTextContent}>
                 <p>
-                  Hello! I&apos;m <span style={{color: '#c084fc', fontWeight: '600'}}>Amegh Dinesh</span>, a Computer Science undergraduate currently in my third year of B.Tech at Madappally, Vadakara, Kerala, India. I am passionate about technology and enjoy exploring how software can be used to solve real-world problems.
+                  Hello! I&apos;m <span style={{ color: '#c084fc', fontWeight: '600' }}>Amegh Dinesh</span>, a Computer Science undergraduate currently in my third year of B.Tech at Madappally, Vadakara, Kerala, India. I am passionate about technology and enjoy exploring how software can be used to solve real-world problems.
                 </p>
                 <p>
                   My journey in computer science started with curiosity about how systems and applications work. Over time, this interest developed into a strong focus on programming and problem-solving. I have been building my foundation in C, C++, Python, and Java, while also strengthening my understanding of data structures, algorithms, and software development concepts.
@@ -185,7 +185,7 @@ export default function Home() {
           <p className={styles.projectsSubtitle}>
             A showcase of my work spanning web applications, APIs, and responsive interfaces.
           </p>
-          
+
           <div className={styles.projectFilters}>
             <span className={`${styles.filterPill} ${styles.filterActive}`}>All Projects</span>
             <span className={styles.filterPill}>Full Stack</span>
@@ -201,8 +201,8 @@ export default function Home() {
           <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
             <div className={styles.projectImageContainer}>
               <div className={styles.projectImagePlaceholder}>
-                 {/* Placeholder for project image */}
-                 <span style={{color: '#94a3b8'}}>Project Preview</span>
+                {/* Placeholder for project image */}
+                <span style={{ color: '#94a3b8' }}>Project Preview</span>
               </div>
               <span className={styles.featuredBadge}>Featured</span>
               <div className={styles.imageTagsOverlay}>
@@ -210,19 +210,19 @@ export default function Home() {
                 <span className={styles.imageTag}>Java UI</span>
               </div>
             </div>
-            
+
             <div className={styles.projectContent}>
               <h3 className={styles.cardTitle}>Event Manager</h3>
               <p className={styles.cardDesc}>
                 A robust event-handling system that allows users to efficiently organize and manage scheduled activities. Built using object-oriented principles, ensuring modularity and clear system architecture.
               </p>
-              
+
               <div className={styles.cardTagsWrapper}>
                 <span className={styles.techTag}>Java</span>
                 <span className={styles.techTag}>Java Swing</span>
                 <span className={styles.techTag}>OOP</span>
               </div>
-              
+
               <div className={styles.projectActions}>
                 <button className={styles.projectPrimaryBtn}>Live Demo</button>
                 <button className={styles.projectSecondaryBtn}>Source Code</button>
@@ -234,27 +234,27 @@ export default function Home() {
           <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
             <div className={styles.projectImageContainer}>
               <div className={styles.projectImagePlaceholder} style={{ background: '#1e293b' }}>
-                 {/* Placeholder for project image */}
-                 <span style={{color: '#94a3b8'}}>Project Preview</span>
+                {/* Placeholder for project image */}
+                <span style={{ color: '#94a3b8' }}>Project Preview</span>
               </div>
               <div className={styles.imageTagsOverlay}>
                 <span className={styles.imageTag}>Interactive</span>
                 <span className={styles.imageTag}>Simulator</span>
               </div>
             </div>
-            
+
             <div className={styles.projectContent}>
               <h3 className={styles.cardTitle}>Mental Health Simulator</h3>
               <p className={styles.cardDesc}>
                 An interactive text-based simulator providing tailored wellness guidance based on user mood evaluation. Includes scenario-based question flows and input validation for smooth interaction.
               </p>
-              
+
               <div className={styles.cardTagsWrapper}>
                 <span className={styles.techTag}>Java</span>
                 <span className={styles.techTag}>Java Swing</span>
                 <span className={styles.techTag}>JSON</span>
               </div>
-              
+
               <div className={styles.projectActions}>
                 <button className={styles.projectPrimaryBtn}>Live Demo</button>
                 <button className={styles.projectSecondaryBtn}>Source Code</button>
@@ -267,7 +267,7 @@ export default function Home() {
       <section id="education" className={styles.section}>
         <h2 className={styles.sectionTitle}>Education</h2>
         <div className={styles.educationList}>
-          
+
           <div className={`${styles.educationCard} glass`}>
             <div className={styles.educationInfo}>
               <h3 className={styles.educationTitle}>Lovely Professional University</h3>
@@ -279,7 +279,7 @@ export default function Home() {
               <span className={styles.datePill}>Since August 2023</span>
             </div>
           </div>
-          
+
           <div className={`${styles.educationCard} glass`}>
             <div className={styles.educationInfo}>
               <h3 className={styles.educationTitle}>Gvhss Madappally</h3>
@@ -314,8 +314,8 @@ export default function Home() {
             <h3 className={styles.cardTitle}>Java with Data Structures and Algorithms</h3>
             <div className={styles.cardDate}>Jun &apos;25 &mdash; Jul &apos;25</div>
             <p className={styles.cardDesc}>
-              <strong>CipherSchools</strong><br/>
-              Engineered interactive applications using Java and Java Swing, applying structured UI components. 
+              <strong>CipherSchools</strong><br />
+              Engineered interactive applications using Java and Java Swing, applying structured UI components.
               Gained practical experience in core and advanced Java practices including OOP and component-based design.
             </p>
           </div>
@@ -328,8 +328,8 @@ export default function Home() {
                 <li><strong>Udemy:</strong> Build Generative AI Apps and Solutions with No-Code Tools (Aug &apos;24)</li>
                 <li><strong>FreeCodeCamp:</strong> Legacy Responsive Web Design V8 (Jun &apos;24)</li>
               </ul>
-              <br/>
-              <strong>Achievements:</strong><br/>
+              <br />
+              <strong>Achievements:</strong><br />
               Earned Top badge on HackerRank, including a 3-Star rating in Java for consistent performance (Nov &apos;25).
             </div>
           </div>
