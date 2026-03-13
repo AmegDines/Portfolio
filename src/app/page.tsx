@@ -27,16 +27,89 @@ export default function Home() {
       </section>
 
       <section id="about" className={styles.section}>
-        <h2 className={styles.sectionTitle}>About Me</h2>
-        <div className={`${styles.card} glass`}>
-          <p className={styles.cardDesc} style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-            Hello! I&apos;m <strong>Ameg Dines</strong>, a dedicated Data Science Engineer and tech enthusiast based in Kerala, India. 
-            Currently pursuing my Bachelor of Technology in Computer Science and Engineering at Lovely Professional University. 
-            I have a strong foundation in core Computer Science principles including Data Structures, Algorithms, Object-Oriented Programming, and Database Management Systems.
-            <br/><br/>
-            I am highly passionate about building robust, efficient software systems, and I am continuously expanding my expertise in Generative AI, machine learning, and modern web technologies. 
-            I thrive in problem-solving environments and am always eager to learn, adapt, and tackle new challenges in the tech world.
-          </p>
+        <div className={styles.aboutTitleContainer}>
+          <h2 className={styles.aboutTitleText}>About Me</h2>
+        </div>
+        
+        <div className={styles.aboutGrid}>
+          {/* Left Column */}
+          <div className={styles.aboutColumn}>
+            {/* Quick Facts Card */}
+            <div className={`${styles.card} glass`} style={{ padding: '1.5rem' }}>
+              <h3 className={styles.aboutCardTitle}>Quick Facts</h3>
+              <div className={styles.factList}>
+                <div className={styles.factItem}>
+                  <div className={styles.factIcon}>📍</div>
+                  <div className={styles.factTextContainer}>
+                    <span className={styles.factLabel}>Location</span>
+                    <span className={styles.factValue}>Kerala, India</span>
+                  </div>
+                </div>
+                <div className={styles.factItem}>
+                  <div className={`${styles.factIcon} ${styles.factIconPurple}`}>🎓</div>
+                  <div className={styles.factTextContainer}>
+                    <span className={styles.factLabel}>Education</span>
+                    <span className={styles.factValue}>Pursuing B.Tech in CS</span>
+                  </div>
+                </div>
+                <div className={styles.factItem}>
+                  <div className={`${styles.factIcon} ${styles.factIconOrange}`}>💼</div>
+                  <div className={styles.factTextContainer}>
+                    <span className={styles.factLabel}>Experience</span>
+                    <span className={styles.factValue}>Fresher / Student</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* When I'm Not Coding Card */}
+            <div className={`${styles.card} glass`} style={{ padding: '1.5rem' }}>
+              <h3 className={styles.aboutCardTitle}>When I&apos;m Not Coding</h3>
+              <div className={styles.hobbyList}>
+                <div className={styles.hobbyItem}>
+                  <span className={styles.hobbyIcon}>💻</span>
+                  <span>Surfing Web</span>
+                </div>
+                <div className={styles.hobbyItem}>
+                  <span className={styles.hobbyIcon}>📚</span>
+                  <span>Reading</span>
+                </div>
+                <div className={styles.hobbyItem}>
+                  <span className={styles.hobbyIcon}>🎵</span>
+                  <span>Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className={styles.aboutColumn}>
+            {/* My Journey Card */}
+            <div className={`${styles.card} glass`} style={{ padding: '2rem' }}>
+              <h3 className={styles.aboutCardTitle} style={{ color: '#60a5fa' }}>My Journey</h3>
+              <div className={styles.aboutTextContent}>
+                <p>
+                  Hello! I&apos;m <span style={{color: '#c084fc', fontWeight: '600'}}>Amegh Dinesh</span>, a Computer Science undergraduate currently in my third year of B.Tech at Madappally, Vadakara, Kerala, India. I am passionate about technology and enjoy exploring how software can be used to solve real-world problems.
+                </p>
+                <p>
+                  My journey in computer science started with curiosity about how systems and applications work. Over time, this interest developed into a strong focus on programming and problem-solving. I have been building my foundation in C, C++, Python, and Java, while also strengthening my understanding of data structures, algorithms, and software development concepts.
+                </p>
+                <p>
+                  As a student developer, I continuously work on improving my skills through learning, experimentation, and academic projects. I am eager to apply my knowledge to real-world challenges and grow as a software engineer.
+                </p>
+              </div>
+            </div>
+
+            {/* My Approach Card */}
+            <div className={`${styles.card} glass`} style={{ padding: '2rem' }}>
+              <h3 className={styles.aboutCardTitle} style={{ color: '#60a5fa' }}>My Approach</h3>
+              <div className={styles.aboutTextContent}>
+                <p>
+                  I believe in writing clear, efficient, and well-structured code. My goal is to understand problems deeply and design logical solutions that are both practical and scalable. I value continuous learning and consistently explore new technologies to expand my technical abilities.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
