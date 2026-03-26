@@ -30,7 +30,7 @@ export default function Home() {
         </h1>
 
         <h2 className={styles.heroSubtitle}>
-          Data Science Engineer <span className={styles.cursor}>|</span>
+          Data Science Student | Aspiring Data Scientist <span className={styles.cursor}>|</span>
         </h2>
 
         <p className={styles.heroDescription}>
@@ -89,24 +89,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* When I'm Not Coding Card */}
-            <div className={`${styles.card} glass`} style={{ padding: '1.5rem' }}>
-              <h3 className={styles.aboutCardTitle}>When I&apos;m Not Coding</h3>
-              <div className={styles.hobbyList}>
-                <div className={styles.hobbyItem}>
-                  <span className={styles.hobbyIcon}>💻</span>
-                  <span>Surfing Web</span>
-                </div>
-                <div className={styles.hobbyItem}>
-                  <span className={styles.hobbyIcon}>📚</span>
-                  <span>Reading</span>
-                </div>
-                <div className={styles.hobbyItem}>
-                  <span className={styles.hobbyIcon}>🎵</span>
-                  <span>Music</span>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           {/* Right Column */}
@@ -186,14 +169,6 @@ export default function Home() {
             A showcase of my work spanning web applications, APIs, and responsive interfaces.
           </p>
 
-          <div className={styles.projectFilters}>
-            <span className={`${styles.filterPill} ${styles.filterActive}`}>All Projects</span>
-            <span className={styles.filterPill}>Full Stack</span>
-            <span className={styles.filterPill}>Data Visualization</span>
-            <span className={styles.filterPill}>Frontend</span>
-            <span className={styles.filterPill}>API Integration</span>
-            <span className={styles.filterPill}>Web App</span>
-          </div>
         </div>
 
         <div className={styles.grid}>
@@ -206,7 +181,6 @@ export default function Home() {
               </div>
               <span className={styles.featuredBadge}>Featured</span>
               <div className={styles.imageTagsOverlay}>
-                <span className={styles.imageTag}>Full Stack</span>
                 <span className={styles.imageTag}>Java UI</span>
               </div>
             </div>
