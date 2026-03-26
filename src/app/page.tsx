@@ -175,10 +175,11 @@ export default function Home() {
           {/* Event Manager Project */}
           <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
             <div className={styles.projectImageContainer}>
-              <div className={styles.projectImagePlaceholder}>
-                {/* Placeholder for project image */}
-                <span style={{ color: '#94a3b8' }}>Project Preview</span>
-              </div>
+              <img
+                src="/event_manager_preview.png"
+                alt="Event Manager Preview"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
               <span className={styles.featuredBadge}>Featured</span>
               <div className={styles.imageTagsOverlay}>
                 <span className={styles.imageTag}>Java UI</span>
@@ -207,10 +208,11 @@ export default function Home() {
           {/* Mental Health Simulator Project */}
           <div className={`${styles.card} glass`} style={{ padding: 0, overflow: 'hidden' }}>
             <div className={styles.projectImageContainer}>
-              <div className={styles.projectImagePlaceholder} style={{ background: '#1e293b' }}>
-                {/* Placeholder for project image */}
-                <span style={{ color: '#94a3b8' }}>Project Preview</span>
-              </div>
+              <img
+                src="/mental_health_preview.png"
+                alt="Mental Health Simulator Preview"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
               <div className={styles.imageTagsOverlay}>
                 <span className={styles.imageTag}>Interactive</span>
                 <span className={styles.imageTag}>Simulator</span>
