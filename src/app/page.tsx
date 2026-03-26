@@ -11,7 +11,6 @@ export default function Home() {
           <a href="#projects" className={styles.navLink}>Projects</a>
           <a href="#certifications" className={styles.navLink}>Certifications</a>
           <a href="#achievements" className={styles.navLink}>Achievements</a>
-          <a href="#resume" className={styles.navLink}>Resume</a>
           <a href="#contact" className={styles.navLink}>Contact</a>
         </nav>
       </header>
@@ -200,7 +199,7 @@ export default function Home() {
 
               <div className={styles.projectActions}>
                 <button className={styles.projectPrimaryBtn}>Live Demo</button>
-                <button className={styles.projectSecondaryBtn}>Source Code</button>
+                <a href="https://github.com/AmegDines/Event-Reminder-" target="_blank" rel="noopener noreferrer" className={styles.projectSecondaryBtn}>Source Code</a>
               </div>
             </div>
           </div>
@@ -233,7 +232,7 @@ export default function Home() {
 
               <div className={styles.projectActions}>
                 <button className={styles.projectPrimaryBtn}>Live Demo</button>
-                <button className={styles.projectSecondaryBtn}>Source Code</button>
+                <a href="https://github.com/AmegDines/Mental-Health" target="_blank" rel="noopener noreferrer" className={styles.projectSecondaryBtn}>Source Code</a>
               </div>
             </div>
           </div>
