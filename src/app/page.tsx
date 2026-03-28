@@ -1,28 +1,25 @@
+"use client";
+
+import { useState } from 'react';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
   return (
     <main className={styles.main}>
       <header className={styles.header}>
         <div className={styles.logo}>Ameg Dines</div>
         <nav className={styles.navLinks}>
-          <a href="#about" className={styles.navLink} style={{ color: 'var(--primary)' }}>Home</a>
+          <a href="#about" className={styles.navLink}>Home</a>
           <a href="#skills" className={styles.navLink}>Skills</a>
           <a href="#projects" className={styles.navLink}>Projects</a>
-          <a href="#certifications" className={styles.navLink}>Certifications</a>
-          <a href="#achievements" className={styles.navLink}>Achievements</a>
-          <a href="#contact" className={styles.navLink}>Contact</a>
+          <a href="#education" className={styles.navLink}>Education</a>
+          <a href="#training" className={styles.navLink}>Training</a>
+          <button onClick={() => setIsResumeModalOpen(true)} className={styles.resumeBtn}>Resume</button>
         </nav>
       </header>
 
       <section className={styles.hero}>
-        <div className={styles.avatarContainer}>
-          <img
-            src={`https://ui-avatars.com/api/?name=Amegh+Dinesh&background=eab308&color=0b0f19&size=200`}
-            alt="Amegh Dinesh"
-            className={styles.avatarImage}
-          />
-        </div>
 
         <h1 className={styles.title}>
           <span className={styles.titleGradient}>Ameg Dines</span>
@@ -95,10 +92,10 @@ export default function Home() {
           <div className={styles.aboutColumn}>
             {/* My Journey Card */}
             <div className={`${styles.card} glass`} style={{ padding: '2rem' }}>
-              <h3 className={styles.aboutCardTitle} style={{ color: '#60a5fa' }}>My Journey</h3>
+              <h3 className={styles.aboutCardTitle}>My Journey</h3>
               <div className={styles.aboutTextContent}>
                 <p>
-                  Hello! I&apos;m <span style={{ color: '#c084fc', fontWeight: '600' }}>Amegh Dinesh</span>, a Computer Science undergraduate currently in my third year of B.Tech at Madappally, Vadakara, Kerala, India. I am passionate about technology and enjoy exploring how software can be used to solve real-world problems.
+                  Hello! I&apos;m <span>Amegh Dinesh</span>, a Computer Science undergraduate currently in my third year of B.Tech at Madappally, Vadakara, Kerala, India. I am passionate about technology and enjoy exploring how software can be used to solve real-world problems.
                 </p>
                 <p>
                   My journey in computer science started with curiosity about how systems and applications work. Over time, this interest developed into a strong focus on programming and problem-solving. I have been building my foundation in C, C++, Python, and Java, while also strengthening my understanding of data structures, algorithms, and software development concepts.
@@ -111,7 +108,7 @@ export default function Home() {
 
             {/* My Approach Card */}
             <div className={`${styles.card} glass`} style={{ padding: '2rem' }}>
-              <h3 className={styles.aboutCardTitle} style={{ color: '#60a5fa' }}>My Approach</h3>
+              <h3 className={styles.aboutCardTitle}>My Approach</h3>
               <div className={styles.aboutTextContent}>
                 <p>
                   I believe in writing clear, efficient, and well-structured code. My goal is to understand problems deeply and design logical solutions that are both practical and scalable. I value continuous learning and consistently explore new technologies to expand my technical abilities.
@@ -310,6 +307,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Resume Modal Window */}
+      {isResumeModalOpen && (
+        <div className={styles.modalOverlay} onClick={() => setIsResumeModalOpen(false)}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.closeModalBtn} onClick={() => setIsResumeModalOpen(false)} aria-label="Close">
+              &times;
+            </button>
+            
+            <div className={styles.cvImageContainer}>
+              <img src="/cv.png" alt="Ameg Dines CV" className={styles.cvImage} />
+            </div>
+            
+            <div className={styles.modalActions}>
+              <a href="/resume.pdf" download className={styles.primaryButton}>Download PDF</a>
+              <a href="#contact" onClick={() => setIsResumeModalOpen(false)} className={styles.secondaryButton}>Contact Me</a>
+            </div>
+          </div>
+        </div>
+      )}
 
     </main>
   );
